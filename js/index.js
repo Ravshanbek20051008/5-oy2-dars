@@ -248,9 +248,9 @@
 
 // savolllarga javob
 // IIFE ga oid 4 ta misol tuzing hamda ularning qanday ishlashini, IIFE ning nega kerakligini izohlang.
-(function () {
-  let a = 5;
-})();
+// (function () {
+//   let a = 5;
+// })();
 /*-
 uning avzalligi iife da elon qilingan  har qanday ozgaruvchi console oynasidan qidirilganda 
 korinmaydi va bu bizning kodimizga tashqaridan murojat qilishni yoq qilib qoyadi agar kodimizni 
@@ -268,12 +268,24 @@ ishlatishimiz  shart emas u ozimiz korilishini istamaydigan qismlar uchun bergan
 // console.log(juft(son));
 
 //b)
-let son = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let result = 0;
-const juft = (son) => {
-  let res = son.map(function (a) {
-    result += a;
-  });
-  return result;
-};
-console.log(juft(son));
+// let son = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let result = 0;
+// const juft = (son) => {
+//   let res = son.map(function (a) {
+//     result += a;
+//   });
+//   return result;
+// };
+// console.log(juft(son));
+
+//c)
+/* pure function bu sof functsiya bolib u oziga berilgan qiymatdan bosha qiymatni qabul qilmaydi 
+yani tashqaridan qoshimcha qilib berilgan qiymatni olmaydi oziga berilgan qiymat bilnagina ish koradi
+maslan hozirgi misolda unga son nomli massiv berildi agarda unga qoshicha yana biror string yoki 
+masivni qoshib bersam u tashqaridan kirilganligi uchun ishlamay qoladi*/
+
+// 3-savol
+/*callbac function bu boshqa bir functsiyadan argument orqali yana bor functsoyani chqirib olish
+js asos 1 ta buyruq boycha ish koradi lekin callbac function orqali bu ishni oshirish mumkun*/
+//a)
+// 1-masala
